@@ -101,7 +101,7 @@ function showCart(){
 
     let total = 0;
 
-    for (let i = 0; i <= cart.length; i++) {
+    for (let i = 0; i < cart.length; i++) {
         const cartItem = document.createElement("div");
         cartItem.classList.add("cart-item");
 
@@ -115,7 +115,8 @@ function showCart(){
         total += cart[i].price;
     }
 
-    totalPrice.textContent = `Total ${total}`;
+    totalPrice.textContent = `Total ${total} NOK`;
+    
 
 }
 
