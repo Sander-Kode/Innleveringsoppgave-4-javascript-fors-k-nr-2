@@ -115,6 +115,9 @@ function showCart(){
         total += cart[i].price;
     }
 
-    totalPrice.textContent = ``
+    totalPrice.textContent = `Total ${total}`;
 
 }
+
+showProducts();
+showCart();
